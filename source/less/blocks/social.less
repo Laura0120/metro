@@ -1,0 +1,31 @@
+.social-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  .list-reset();
+}
+
+.social-item {
+  width: 31px;
+  height: 31px;
+  transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 70%;
+    }
+
+    &:active {
+      opacity: 50%;
+    }
+
+
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    max-width: 400px;
+    margin-left: 20px;
+  }
+}

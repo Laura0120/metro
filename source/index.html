@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Интернет магазин "Мишка"</title>
+    <link
+      rel="stylesheet"
+      href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" />
+  </head>
+
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a
+          href="#"
+          class="page-header__logo"
+        >
+          <picture>
+            <source srcset="img/icon-logo.svg" />
+            <img
+              src="img/icon-logo.svg"
+              width="150"
+              height="54"
+              alt="Московское метро"
+            />
+          </picture>
+        </a>
+        <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <button type="button" class="main-nav__toggle">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#">
+                  Схема
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  Как оплатить
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  Пассажирам
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  Новости
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  Работа
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  О метрополитене
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title title title--h1">Московское метро</h1>
+      <div class="swiper-container page-main__promo-slider promo-slider">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide promo-slider__slide" href='#'>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/slide-1.webp"
+              />
+              <img
+                src="img/slide-1.jpg"
+                width="1200"
+                height="856"
+                alt="слайд первый"
+              />
+            </picture>
+            <div class="promo-slider__content">
+              <h2 class="title title--h2">Заголовок</h2>
+              <p class="item.description">Текст</p>
+            </div>
+          </a>
+          <a class="swiper-slide promo-slider__slide" href='#'>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/slide-2.webp"
+              />
+              <img
+                src="img/slide-2.jpg"
+                width="576"
+                height="384"
+                alt="слайд второй"
+              />
+            </picture>
+            <div class="promo-slider__content">
+              <h2 class="title title--h2">Заголовок</h2>
+              <p class="item.description">Текст</p>
+            </div>
+          </a>
+          <a class="swiper-slide promo-slider__slide" href='#'>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/slide-3.webp"
+              />
+              <img
+                src="img/slide-3.jpg"
+                width="1080"
+                height="701"
+                alt="слайд третий"
+              />
+            </picture>
+            <div class="promo-slider__content">
+              <h2 class="title title--h2">Заголовок</h2>
+              <p class="item.description">Текст</p>
+            </div>
+          </a>
+        </div>
+        <div class="promo-slider__button-wrapper">
+          <button class="promo-slider__button promo-slider__button--prev" type="button" aria-label="предыдущий слайд">
+            <svg width="7" height="14">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="promo-slider__button promo-slider__button--next" type="button" aria-label="следующий слайд">
+            <svg width="7" height="14">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="promo-slider__pagination"></div>
+      </div>
+      <form action="/" method="post" class="page-main__form form">
+        <h2 class="page-main__title title title--h2 ">Заполните форму</h2>
+        <div class="form__wrapper">
+          <div class="form__wrapper-input">
+            <label for="name" class="form__label">
+              *Имя:
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+          <div class="form__wrapper-input">
+            <label for="surname" class="form__label">
+              *Фамилия:
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Укажите фамилию"
+              required
+            />
+          </div>
+          <div class="form__wrapper-input">
+            <label for="patronymic" class="form__label">
+              *Отчество:
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              name="patronymic"
+              id="patronymic"
+              placeholder="Отчество"
+              required
+            />
+          </div>
+          <div class="form__wrapper-input">
+            <label for="date-of-birth" class="form__label">
+              *Дата рождения
+            </label>
+            <input
+              class="form__input"
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              min="1900-01-01"
+              max="2022-04-22"
+              required/>
+          </div>
+          <div class="form__wrapper-input">
+            <label for="place-of-birth" class="form__label">
+              Место рождения:
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              name="place-of-birth"
+              id="place-of-birth"
+              placeholder="Москва/МО/Россия"
+            />
+          </div>
+
+        </div>
+        <div class="form__wrapper">
+          <button type="submit" class="form__button button">
+            отправить
+          </button>
+          <p class="form__footnote">*Поля обязательны для заполнения</p>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="#"
+           aria-label="Перейти на главную"
+           class = page-footer__logo>
+            <picture>
+              <source srcset="img/icon-logo.svg" />
+              <img
+                src="img/icon-logo.svg"
+                width="150"
+                height="54"
+                alt="Московское метро"
+              />
+            </picture>
+        </a>
+        <div class="page-footer__social social">
+          <h2 class="">МЫ В СОЦСЕТЯХ</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://vk.com/mosmetro"
+                aria-label="Мы ВКонтакте"
+              >
+                <svg class="social-item__icon" width="31" height="31">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/init-menu.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
+</html>
