@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Интернет магазин "Мишка"</title>
+    <title>Московское метро</title>
     <link
       rel="stylesheet"
       href="css/style.min.css" />
@@ -210,15 +210,17 @@
           </div>
           <div class="form__wrapper-input">
             <label for="place-of-birth" class="form__label">
-              Место рождения:
+              *Место рождения:
             </label>
-            <input
-              class="form__input"
-              type="text"
-              name="place-of-birth"
-              id="place-of-birth"
-              placeholder="Москва/МО/Россия"
-            />
+            <select class="form__input"
+                    name="place-of-birth"
+                    id="place-of-birth"
+                    required>
+              <option disabled selected></option>
+              <option value="Москва">Москва</option>
+              <option value="МО">МО</option>
+              <option value="Россия">Россия</option>
+            </select>
           </div>
 
         </div>
